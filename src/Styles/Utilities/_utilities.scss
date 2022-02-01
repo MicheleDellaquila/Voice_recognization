@@ -1,0 +1,169 @@
+@import '../Variables/variables';
+
+/* container */
+@each $breakpoints, $key in $breakpoints {
+  @if $key == 280 {
+    .container {
+      @media (min-width: $key) {
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        padding-left: 15px;
+        padding-right: 15px;
+      }
+    }
+  } @else {
+    .container {
+      @media (min-width: $key) {
+        width: $key;
+        margin-left: auto;
+        margin-right: auto;
+        padding-left: 15px;
+        padding-right: 15px;
+      }
+    }
+  }
+}
+
+/* dispaly */
+@each $property, $key in $display {
+  .#{$property} {
+    display: #{$property};
+  }
+}
+
+/* position */
+@each $property, $key in $position {
+  .#{$property} {
+    position: #{$property};
+  }
+}
+
+/* justify content */
+@each $property, $key in $justify {
+  .#{$property} {
+    justify-content: #{$key};
+  }
+}
+
+/* items */
+@each $property, $key in $items {
+  .#{$property} {
+    align-items: #{$key};
+  }
+}
+
+/* create padding */
+@each $property, $value in $padding {
+  .#{$property} {
+    padding: #{$value};
+  }
+}
+
+/* create padding x */
+@each $property, $value in $paddingX {
+  .#{$property} {
+    padding-left: #{$value} !important;
+    padding-right: #{$value} !important;
+  }
+}
+
+/* create padding y */
+@each $property, $value in $paddingY {
+  .#{$property} {
+    padding-top: #{$value};
+    padding-bottom: #{$value};
+  }
+}
+
+/* create padding t */
+@each $property, $value in $paddingT {
+  .#{$property} {
+    padding-top: #{$value};
+  }
+}
+
+/* create padding r */
+@each $property, $value in $paddingR {
+  .#{$property} {
+    padding-right: #{$value} !important;
+  }
+}
+
+/* create padding b */
+@each $property, $value in $paddingB {
+  .#{$property} {
+    padding-bottom: #{$value};
+  }
+}
+
+/* create padding l */
+@each $property, $value in $paddingL {
+  .#{$property} {
+    padding-left: #{$value} !important;
+  }
+}
+
+/* create margin */
+@each $property, $value in $margin {
+  .#{$property} {
+    margin: #{$value};
+  }
+}
+
+/* create margin x */
+@each $property, $value in $marginX {
+  .#{$property} {
+    margin-left: #{$value};
+    margin-right: #{$value};
+  }
+}
+
+/* create margin y */
+@each $property, $value in $marginY {
+  .#{$property} {
+    margin-top: #{$value};
+    margin-bottom: #{$value};
+  }
+}
+
+/* create margin t */
+@each $property, $value in $marginT {
+  .#{$property} {
+    margin-top: #{$value};
+  }
+}
+
+/* create margin r */
+@each $property, $value in $marginR {
+  .#{$property} {
+    margin-right: #{$value};
+  }
+}
+
+/* create margin b */
+@each $property, $value in $marginB {
+  .#{$property} {
+    margin-bottom: #{$value};
+  }
+}
+
+/* create margin l */
+@each $property, $value in $marginL {
+  .#{$property} {
+    margin-left: #{$value};
+  }
+}
+
+/* create column */
+@each $property, $key in $breakpoints {
+  @for $i from 1 through $columns {
+    @media (min-width: $key) {
+      .col-#{$property}-#{$i} {
+        flex-basis: (100% / $columns) * $i;
+        padding-left: 15px;
+        padding-right: 15px;
+      }
+    }
+  }
+}

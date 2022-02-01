@@ -1,0 +1,48 @@
+@import '../Variables/varProject';
+
+.input {
+  display: block;
+  width: 100%;
+  padding: 0.75rem 1rem;
+  background-color: #fff;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  border: 1px solid #eeeeee;
+  border-radius: 0.3125rem;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+
+  &:focus {
+    border: 1px solid #066ac9;
+    box-shadow: 0 0px 0 4px rgba($color: #066ac9, $alpha: 0.2);
+  }
+
+  &::placeholder {
+    color: #bdbdbd;
+    font-size: 1rem;
+    font-weight: 400;
+  }
+
+  &:disabled {
+    cursor: not-allowed;
+    background-color: rgba($color: #bdbdbd, $alpha: 0.6);
+    border: 1px solid rgba($color: #bdbdbd, $alpha: 0.6);
+  }
+
+  &:-webkit-autofill {
+    -webkit-box-shadow: 0 0 0 50px white inset !important;
+    -webkit-text-fill-color: #333 !important;
+  }
+
+  &:-webkit-autofill:focus {
+    -webkit-box-shadow: 0 0 0 50px white inset !important; /*your box-shadow*/
+    -webkit-text-fill-color: #333 !important;
+  }
+}
+
+@media (max-width: 576px) {
+  .input[type='date']:after {
+    color: #aaa;
+    content: attr(placeholder) !important;
+  }
+}
