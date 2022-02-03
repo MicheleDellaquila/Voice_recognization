@@ -1,12 +1,12 @@
 import React from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import Pcto from './Pages/Pcto/Pcto';
+import Home from './Pages/Home/Home';
 
 const App = () => {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path='/Alternanza-scuola-lavoro' element={<Pcto />} />
+        <Route path='/' element={<Home />} />
       </Routes>
     </BrowserRouter>
   );

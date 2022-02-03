@@ -1,0 +1,43 @@
+.Home {
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 4rem;
+  height: auto;
+
+  .Home__author {
+    color: #f1f1f1;
+    position: absolute;
+    font-size: 80px;
+    top: -47px;
+    left: -30px;
+    z-index: -1;
+  }
+
+  &__title {
+    font-size: 5rem;
+  }
+
+  &__carousel {
+    margin-left: 18rem;
+    margin-top: -1.75rem;
+    position: relative;
+    overflow: hidden;
+
+    &-inner {
+      display: flex;
+    }
+
+    &-item {
+      min-height: 320px;
+      min-width: 320px;
+      padding: 0 1rem;
+    }
+  }
+
+  @media (min-width: 992px) {
+    height: 100%;
+  }
+}
