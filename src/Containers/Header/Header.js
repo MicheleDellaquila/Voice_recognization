@@ -1,10 +1,13 @@
 import React from 'react';
 import './Header.scss';
+import { Link } from 'react-router-dom';
 
 const Header = () => {
   return (
-    <header className='Header container'>
-      <h1 className='Header__title'>Vocal recognition</h1>
+    <header className='Header'>
+      <Link to='/' className='Header__link'>
+        Voice Recognization
+      </Link>
     </header>
   );
 };

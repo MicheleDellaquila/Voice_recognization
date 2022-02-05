@@ -7,6 +7,8 @@ import Italiano from '../../Assets/Images/Italiano.jpg';
 import ReactJS from '../../Assets/Images/React js.jpg';
 import Web from '../../Assets/Images/Web 2.0.jpg';
 import Storia from '../../Assets/Images/Storia.jpeg';
+import Gestione from '../../Assets/Images/Gestione.png';
+import Informatica from '../../Assets/Images/Informatica.jpeg';
 import { motion } from 'framer-motion/dist/framer-motion';
 
 const Home = () => {
@@ -61,7 +63,11 @@ const Home = () => {
             />
           </div>
           <div className='Home__carousel-item'>
-            <SchoolObject backgroundImage={Image} title='Italiano' description='ciao' />
+            <SchoolObject
+              backgroundImage={Informatica}
+              title='Informatica'
+              description='Descrizione e spiegazione di una base dati'
+            />
           </div>
           <div className='Home__carousel-item'>
             <SchoolObject
@@ -81,7 +87,11 @@ const Home = () => {
             <SchoolObject backgroundImage={Image} title='Italiano' description='ciao' />
           </div>
           <div className='Home__carousel-item'>
-            <SchoolObject backgroundImage={Image} title='Italiano' description='ciao' />
+            <SchoolObject
+              backgroundImage={Gestione}
+              title='Gestione'
+              description='Spiegazione di un organigramma / costruzione progetto'
+            />
           </div>
         </motion.div>
       </motion.div>

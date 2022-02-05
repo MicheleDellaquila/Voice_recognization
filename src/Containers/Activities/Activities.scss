@@ -1,0 +1,36 @@
+.Activities {
+  position: relative;
+  background-color: #fdfffc;
+
+  &__title {
+    text-align: center;
+    color: #011627;
+    font-weight: bold;
+    font-size: 2rem;
+  }
+
+  &__list {
+    position: relative;
+
+    &::after {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 50%;
+      height: 100%;
+      border: 2px solid #e71d36;
+      border-radius: 12px;
+    }
+  }
+
+  &__item {
+    display: flex;
+    width: 50%;
+    padding: 1.25rem 2rem;
+
+    &:nth-child(even) {
+      margin-left: auto;
+      justify-content: flex-end;
+    }
+  }
+}

@@ -1,0 +1,66 @@
+.CardActivities {
+  position: relative;
+  display: flex;
+  align-items: center;
+  background-color: #ffffff;
+  border: 1px solid #eeeeee;
+  border-radius: 6px;
+
+  &__title {
+    font-size: 1.25rem;
+    color: #011627;
+    font-weight: 700;
+  }
+
+  &__subtitle {
+    font-size: 0.875rem;
+    color: #c2c8cd;
+    font-weight: 400;
+    margin-top: 0.25rem;
+  }
+
+  &__date {
+    border-left: 1px solid #eeeeee;
+
+    &-month {
+      text-align: center;
+      color: #c2c8cd;
+      font-weight: bold;
+    }
+
+    &-day {
+      color: #011627;
+      font-weight: 700;
+    }
+
+    &-year {
+      text-align: center;
+      color: #c2c8cd;
+      font-weight: bold;
+    }
+  }
+
+  &--left::after {
+    content: '';
+    position: absolute;
+    left: -8px;
+    width: 15px;
+    height: 15px;
+    background-color: #ffffff;
+    border-bottom: 1px solid #eeeeee;
+    border-left: 1px solid #eeeeee;
+    transform: rotate(45deg);
+  }
+
+  &--right::after {
+    content: '';
+    position: absolute;
+    right: -8px;
+    width: 15px;
+    height: 15px;
+    background-color: #ffffff;
+    border-top: 1px solid #eeeeee;
+    border-right: 1px solid #eeeeee;
+    transform: rotate(45deg);
+  }
+}
