@@ -2,6 +2,7 @@ import React from 'react';
 import Cover from '../../Reusable/Cover/Cover';
 import Header from '../../Containers/Header/Header';
 import Activities from '../../Containers/Activities/Activities';
+import Footer from '../../Containers/Footer/Footer';
 
 const Pcto = () => {
   return (
@@ -17,6 +18,7 @@ const Pcto = () => {
       <main className='py-20'>
         <Activities />
       </main>
+      <Footer />
     </div>
   );
 };
