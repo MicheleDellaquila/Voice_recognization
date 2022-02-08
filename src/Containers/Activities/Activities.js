@@ -12,7 +12,7 @@ const Activities = () => {
             <CardActivities
               title='Sicurezza'
               description='Corso sulla sicurezza sul posto di lavoro.'
-              month='Feb'
+              month='FEB'
               day='04'
               year='2020'
               direction='right'
@@ -21,9 +21,9 @@ const Activities = () => {
           <li className='Activities__item'>
             <CardActivities
               title='Superarè'
-              description='Mappatura barriere archittetoniche.'
-              month='Set'
-              day='06'
+              description='Mappatura barriere archittetoniche Barletta.'
+              month='SET'
+              day='02'
               year='2020'
               direction='left'
             />
@@ -32,9 +32,9 @@ const Activities = () => {
             <CardActivities
               title='Cittadini digitali'
               description="Webinar sull'esser un cittadino digitale. Quali doveri e quali diritto esso ha."
-              month='Oct'
-              day='01'
-              year='2022'
+              month='MAG'
+              day='17'
+              year='2021'
               direction='right'
             />
           </li>
@@ -42,19 +42,19 @@ const Activities = () => {
             <CardActivities
               title='Make faire'
               description="Evento europeo sull' innovazione. E' una finestra sul futuro."
-              month='Oct'
-              day='01'
-              year='2022'
+              month='OTT'
+              day='08'
+              year='2021'
               direction='left'
             />
           </li>
           <li className='Activities__item'>
             <CardActivities
-              title='Orientamento'
-              description='Orientamento università della Puglia.'
-              month='Oct'
-              day='01'
-              year='2022'
+              title='Orientamento universìtà della Puglia'
+              description='Orientamento università sul territorio pugliese.'
+              month='NOV'
+              day='05'
+              year='2021'
               direction='right'
             />
           </li>
@@ -71,21 +71,11 @@ const Activities = () => {
           <li className='Activities__item'>
             <CardActivities
               title='Adolescenti Fragili'
-              description='Orientamento università della Puglia'
+              description='Webinar sulla fragilità degli adolescenti.'
               month='MAG'
               day='06'
               year='2021'
               direction='right'
-            />
-          </li>
-          <li className='Activities__item'>
-            <CardActivities
-              title=''
-              description='La genitorialità al tempo del covid'
-              month='FEB'
-              day='09'
-              year='2021'
-              direction='left'
             />
           </li>
           <li className='Activities__item'>
@@ -95,7 +85,7 @@ const Activities = () => {
               month='OCT'
               day='04'
               year='2021'
-              direction='right'
+              direction='left'
             />
           </li>
           <li className='Activities__item'>
@@ -105,7 +95,7 @@ const Activities = () => {
               month='OCT'
               day='11'
               year='2021'
-              direction='left'
+              direction='right'
             />
           </li>
           <li className='Activities__item'>
@@ -115,7 +105,7 @@ const Activities = () => {
               month='GEN'
               day='27'
               year='2021'
-              direction='right'
+              direction='left'
             />
           </li>
         </ul>

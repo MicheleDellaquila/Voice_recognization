@@ -7,8 +7,8 @@ import Italiano from '../../Assets/Images/Italiano.jpg';
 import ReactJS from '../../Assets/Images/React js.jpg';
 import Web from '../../Assets/Images/Web 2.0.jpg';
 import Storia from '../../Assets/Images/Storia.jpeg';
-import Gestione from '../../Assets/Images/Gestione.png';
-import Informatica from '../../Assets/Images/Informatica.jpeg';
+import Gestione from '../../Assets/Images/Gestione.jpeg';
+import Informatica from '../../Assets/Images/Informatica.jpg';
 import { motion } from 'framer-motion/dist/framer-motion';
 
 const Home = () => {

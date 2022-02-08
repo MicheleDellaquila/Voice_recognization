@@ -10,13 +10,13 @@ const Footer = () => {
         <div className='Footer__row'>
           <ul className='Footer__socialList'>
             <li className='Footer__socialList-item'>
-              <InstagramIcon />
+              <InstagramIcon className='Footer__item-icon' />
             </li>
             <li className='Footer__socialList-item'>
-              <LinkedInIcon />
+              <LinkedInIcon className='Footer__item-icon' />
             </li>
           </ul>
-          <p className='Footer__text'>Copyright 2022 Michele Dellaquila</p>
+          <p className='Footer__text'>Copyright 2022 Michele Dellaquila.</p>
         </div>
       </div>
     </footer>

@@ -13,9 +13,25 @@
     align-items: center;
 
     &-item {
-      width: 30px;
-      margin: 0 1rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border: 1px solid #b3beca;
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      margin: 0 0.5rem;
       cursor: pointer;
+
+      &:hover,
+      :active {
+        box-shadow: 0 2px 4px rgba($color: #000000, $alpha: 0.2);
+        border: 1px solid #011627;
+      }
+    }
+
+    .Footer__item-icon {
+      color: #1e2022;
     }
   }
 
