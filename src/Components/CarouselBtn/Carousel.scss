@@ -1,0 +1,29 @@
+.CarouselBtn {
+  display: flex;
+  align-items: center;
+
+  &__prevBtn {
+    display: flex;
+    padding: 0.75rem 1.875rem;
+    margin-right: 1rem;
+    background-color: #212529;
+    cursor: pointer;
+    border-radius: 8px;
+
+    &-text {
+      color: #f8f9fa;
+    }
+  }
+
+  &__nextBtn {
+    display: flex;
+    padding: 0.75rem 1.875rem;
+    cursor: pointer;
+    background-color: #212529;
+    border-radius: 8px;
+
+    &-text {
+      color: #f8f9fa;
+    }
+  }
+}

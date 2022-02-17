@@ -4,7 +4,7 @@ import './CardActivities.scss';
 export const CardActivities = ({ title, description, month, day, year, direction }) => {
   return (
     <div className={`CardActivities CardActivities--${direction}`}>
-      <div className='p-5'>
+      <div className='flex-1 p-5'>
         <h1 className='CardActivities__title'>{title}</h1>
         <h4 className='CardActivities__subtitle'>{description}</h4>
       </div>

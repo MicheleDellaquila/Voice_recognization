@@ -10,6 +10,8 @@ import Storia from '../../Assets/Images/Storia.jpeg';
 import Gestione from '../../Assets/Images/Gestione.jpeg';
 import Informatica from '../../Assets/Images/Informatica.jpg';
 import { motion } from 'framer-motion/dist/framer-motion';
+import { Link } from 'react-router-dom';
+import CarouselBtn from '../../Components/CarouselBtn/CarouselBtn';
 
 const Home = () => {
   const [width, setWidth] = useState(0);
@@ -17,84 +19,38 @@ const Home = () => {
 
   // effect for carousel
   useEffect(() => {
-    setWidth(carousel.current.scrollWidth - carousel.current.offsetWidth);
+    // setWidth(carousel.current.scrollWidth - carousel.current.offsetWidth);
   }, []);
 
   return (
-    <div className='Home'>
-      <div className='relative'>
-        <h1 className='Home__author'>Michele Dellaquila</h1>
-        <h1 className='Home__title'>Voice recognization</h1>
+    <div className='Home container'>
+      <div className='Home__content'>
+        <div className='Home__content-box'>
+          <motion.h1
+            initial={{
+              x: -400,
+              opacity: 0,
+            }}
+            animate={{ x: 0, opacity: 1 }}
+            transition={{ type: 'easeOutSine', duration: 0.85 }}
+            className='Home__box-author'
+          >
+            Michele Dellaquila
+          </motion.h1>
+          <motion.h1
+            initial={{
+              y: -400,
+              opacity: 0,
+            }}
+            animate={{ y: 0, opacity: 1 }}
+            transition={{ type: 'easeOutSine', duration: 0.85, delay: 0.3 }}
+            className='Home__box-title'
+          >
+            Voice recognization
+          </motion.h1>
+        </div>
+        <CarouselBtn />
       </div>
-      <motion.div
-        ref={carousel}
-        className='Home__carousel'
-        whileTap={{
-          cursor: 'grabbing',
-        }}
-      >
-        <motion.div
-          drag='x'
-          dragConstraints={{
-            right: 0,
-            left: -width,
-          }}
-          className='Home__carousel-inner'
-        >
-          <div className='Home__carousel-item'>
-            <SchoolObject
-              backgroundImage={Pcto}
-              title='PCTO'
-              description='Relazione attività alternanza scuola lavoro.'
-            />
-          </div>
-          <div className='Home__carousel-item'>
-            <SchoolObject
-              backgroundImage={Italiano}
-              title='Italiano'
-              description='Riflessioni sulla tecnologia e il loro sviluppo futuro.'
-            />
-          </div>
-          <div className='Home__carousel-item'>
-            <SchoolObject
-              backgroundImage={Storia}
-              title='Storia'
-              description='Spiegazione terza rivoluzione industriale.'
-            />
-          </div>
-          <div className='Home__carousel-item'>
-            <SchoolObject
-              backgroundImage={Informatica}
-              title='Informatica'
-              description='Descrizione e spiegazione di una base dati'
-            />
-          </div>
-          <div className='Home__carousel-item'>
-            <SchoolObject
-              backgroundImage={Web}
-              title='Sistemi'
-              description='Web 2.0, cose e quali sono i suoi utilizzi.'
-            />
-          </div>
-          <div className='Home__carousel-item'>
-            <SchoolObject
-              backgroundImage={ReactJS}
-              title='Tpist'
-              description='React js. Quali tecnologie compone il mio sito web.'
-            />
-          </div>
-          <div className='Home__carousel-item'>
-            <SchoolObject backgroundImage={Image} title='Italiano' description='ciao' />
-          </div>
-          <div className='Home__carousel-item'>
-            <SchoolObject
-              backgroundImage={Gestione}
-              title='Gestione'
-              description='Spiegazione di un organigramma / costruzione progetto'
-            />
-          </div>
-        </motion.div>
-      </motion.div>
     </div>
   );
 };

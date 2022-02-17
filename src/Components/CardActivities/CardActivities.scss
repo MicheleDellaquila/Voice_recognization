@@ -4,6 +4,7 @@
   background-color: #ffffff;
   border: 1px solid #eeeeee;
   border-radius: 6px;
+  flex: 1;
 
   &__title {
     font-size: 1.25rem;
@@ -15,7 +16,7 @@
     font-size: 0.875rem;
     color: #c2c8cd;
     font-weight: 400;
-    margin-top: 0.25rem;
+    margin-top: 0.5rem;
   }
 
   &__date {
@@ -66,5 +67,13 @@
     border-top: 1px solid #eeeeee;
     border-right: 1px solid #eeeeee;
     transform: rotate(45deg) translateY(-50%);
+
+    @media (max-width: 768px) {
+      left: -13.47px;
+      border-top: none;
+      border-right: none;
+      border-bottom: 1px solid #eeeeee;
+      border-left: 1px solid #eeeeee;
+    }
   }
 }

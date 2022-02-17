@@ -1,11 +1,41 @@
 @import '../Variables/variables';
 
 /* container */
-@each $breakpoints, $key in $breakpoints {
-  @if $key == 280 {
+@each $property, $key in $breakpoints {
+  @if ($property == 'xs') {
     .container {
-      @media (min-width: $key) {
-        width: 100%;
+      @media (min-width: 280px) {
+        max-width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        padding-left: 15px;
+        padding-right: 15px;
+      }
+    }
+  } @else if ($property == 'sm') {
+    .container {
+      @media (min-width: 576px) {
+        max-width: 96%;
+        margin-left: auto;
+        margin-right: auto;
+        padding-left: 15px;
+        padding-right: 15px;
+      }
+    }
+  } @else if ($property == 'md') {
+    .container {
+      @media (min-width: 768px) {
+        max-width: 94%;
+        margin-left: auto;
+        margin-right: auto;
+        padding-left: 15px;
+        padding-right: 15px;
+      }
+    }
+  } @else if ($property == 'md') {
+    .container {
+      @media (min-width: 992px) {
+        max-width: 94%;
         margin-left: auto;
         margin-right: auto;
         padding-left: 15px;
@@ -15,7 +45,7 @@
   } @else {
     .container {
       @media (min-width: $key) {
-        width: $key;
+        max-width: $key;
         margin-left: auto;
         margin-right: auto;
         padding-left: 15px;
@@ -156,7 +186,7 @@
 }
 
 /* create column */
-@each $property, $key in $breakpoints {
+@each $property, $key in $breakpoints__col {
   @for $i from 1 through $columns {
     @media (min-width: $key) {
       .col-#{$property}-#{$i} {
