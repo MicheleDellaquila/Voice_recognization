@@ -1,7 +1,6 @@
 html,
 body {
   height: 100%;
-  margin: 0;
   font-family: 'Open Sans', sans-serif;
 }
 
@@ -14,19 +13,4 @@ body {
   text-decoration: none;
   outline: none;
   list-style: none;
-}
-
-img {
-  max-width: 100%;
-  height: auto;
-  vertical-align: middle;
-}
-
-svg {
-  vertical-align: middle;
-}
-
-#root {
-  height: 100%;
-  overflow-x: scroll;
 }

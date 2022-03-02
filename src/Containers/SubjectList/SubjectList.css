@@ -1,0 +1,40 @@
+.SubjectList {
+  height: 320px;
+}
+
+.SubjectList__card {
+  height: 100%;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.SubjectList__card-backgroundImage {
+  position: relative;
+  height: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 6px;
+}
+
+.SubjectList__card-wrapper {
+  padding: 0.875rem 1.25rem;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.25);
+}
+
+.SubjectList__wrapper-title {
+  font-size: 1.25rem;
+  border-bottom: 1px solid #ffffff;
+  line-height: 1.5;
+  color: #ffffff;
+  margin-bottom: 0.5rem;
+}
+
+.SubjectList__wrapper-subtitle {
+  font-size: 1rem;
+  line-height: 1.25;
+  color: #ffffff;
+}

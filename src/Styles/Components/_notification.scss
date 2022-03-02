@@ -1,79 +1,8 @@
-.Notification {
-  position: fixed;
-  width: calc(100% - 10px);
+.notification {
+  width: 100%;
   max-width: 360px;
   bottom: 20px;
   border-radius: 6px;
   z-index: 99999;
-  transition: all 800ms;
-  font-weight: 400;
-}
-
-.Success {
-  background-color: #49ab5f;
-}
-
-.Error {
-  background-color: #d32f2f;
-}
-
-.Info {
-  background-color: #1565c0;
-}
-
-.Notification__icon {
-  width: 35px;
-  height: 35px;
-}
-
-.Notification__title {
-  font-size: 1rem;
-  font-weight: 500;
-  color: #ffffff;
-}
-
-/* animation right */
-.notificationRight--entering {
-  right: -100%;
-}
-
-.notificationRight--entered {
-  right: 20px;
-}
-
-@media (max-width: 576px) {
-  .notificationRight--entered {
-    right: 10px;
-  }
-}
-
-.notificationRight--exiting {
-  right: -100%;
-}
-
-.notificationRight--exited {
-  right: -100%;
-}
-
-/* animation left */
-.notificationLeft--entering {
-  left: -100%;
-}
-
-.notificationLeft--entered {
-  left: 20px;
-}
-
-@media (max-width: 576px) {
-  .notificationLeft--entered {
-    left: 5px;
-  }
-}
-
-.notificationLeft--exiting {
-  left: -100%;
-}
-
-.notificationLeft--exited {
-  left: -100%;
+  transition: left 800ms;
 }
