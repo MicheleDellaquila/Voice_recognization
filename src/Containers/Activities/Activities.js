@@ -8,8 +8,8 @@ const Activities = () => {
   return (
     <div className='Activities container'>
       <h1 className='Activities__title'>Attività pcto</h1>
-      <div className='flex mt-16'>
-        <ul className='Activities__list col-xs-12 col-lg-10 col-xl-8 mx-auto'>
+      <div className='Activities__content mt-16'>
+        <ul className='Activities__list col-xs-12 col-lg-10 col-xl-8'>
           {ListActivitie.map((activitie, index) => {
             return (
               <li className='Activities__item'>

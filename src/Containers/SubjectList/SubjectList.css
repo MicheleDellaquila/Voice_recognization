@@ -1,5 +1,6 @@
 .SubjectList {
   height: 320px;
+  opacity: 0;
 }
 
 .SubjectList__card {

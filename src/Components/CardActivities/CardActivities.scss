@@ -6,6 +6,10 @@
   border-radius: 6px;
   flex: 1;
 
+  .CardActivities__content {
+    padding: 1.25rem;
+  }
+
   &__title {
     font-size: 1.25rem;
     color: #011627;
@@ -24,6 +28,7 @@
     flex-direction: column;
     justify-content: center;
     border-left: 1px solid #eeeeee;
+    padding: 0 1.25rem;
 
     &-month {
       text-align: center;

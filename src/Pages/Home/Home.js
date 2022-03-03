@@ -33,9 +33,11 @@ const Home = () => {
           </motion.h1>
         </div>
         <ul className='Home__list row'>
-          {Subjects.map((subject) => {
+          {Subjects.map((subject, index) => {
             return (
               <SubjectList
+                key={index}
+                id={index}
                 image={subject.backgroundImage}
                 link={subject.link}
                 title={subject.title}

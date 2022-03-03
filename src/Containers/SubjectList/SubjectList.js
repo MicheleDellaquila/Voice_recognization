@@ -3,9 +3,23 @@ import './SubjectList.css';
 import { motion } from 'framer-motion/dist/framer-motion';
 import { Link } from 'react-router-dom';
 
-const SubjectList = ({ image, link, title, description }) => {
+const variants = {
+  enter: (i) => ({
+    opacity: 1,
+    transition: {
+      delay: i * 0.3,
+    },
+  }),
+};
+
+const SubjectList = ({ id, image, link, title, description }) => {
   return (
-    <li className='SubjectList col-xs-12 col-sm-6 col-md-4 col-lg-3'>
+    <motion.li
+      custom={id}
+      animate='enter'
+      variants={variants}
+      className='SubjectList col-xs-12 col-sm-6 col-md-4 col-lg-3'
+    >
       <motion.article
         className='SubjectList__card'
         whileHover={{
@@ -28,7 +42,7 @@ const SubjectList = ({ image, link, title, description }) => {
           </div>
         </Link>
       </motion.article>
-    </li>
+    </motion.li>
   );
 };
 
