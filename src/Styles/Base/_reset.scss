@@ -14,3 +14,10 @@ body {
   outline: none;
   list-style: none;
 }
+
+img,
+svg {
+  width: 100%;
+  height: auto;
+  vertical-align: middle;
+}

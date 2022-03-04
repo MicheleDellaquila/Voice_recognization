@@ -1,6 +1,9 @@
 import React from 'react';
+import './Tpsit.scss';
 import Cover from '../../Reusable/Cover/Cover';
 import Header from '../../Containers/Header/Header';
+import Tecnology from '../../Containers/Tecnology/Tecnology';
+import Footer from '../../Containers/Footer/Footer';
 
 const Tpsit = () => {
   return (
@@ -13,6 +16,10 @@ const Tpsit = () => {
           backgroundColor='#00203F'
         />
       </div>
+      <div className='Tpsit__tecnology container'>
+        <Tecnology />
+      </div>
+      <Footer />
     </div>
   );
 };
