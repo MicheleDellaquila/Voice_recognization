@@ -35,7 +35,7 @@ const Subjects = [
   {
     backgroundImage: Gestione,
     title: 'Gestione',
-    description: 'Spiegazione della gestione di un progetto.',
+    description: 'Ciclo di vita di un progetto',
     link: '/gestione',
   },
   {
