@@ -5,7 +5,6 @@ import Tpsit from '../Assets/Images/Tpsit.jpg';
 import Gestione from '../Assets/Images/Gestione.jpeg';
 import Italiano from '../Assets/Images/Italiano.jpg';
 import Storia from '../Assets/Images/Storia.jpeg';
-import Matematica from '../Assets/Images/Matematica.jpg';
 
 const Subjects = [
   {
@@ -53,14 +52,8 @@ const Subjects = [
   {
     backgroundImage: Sistemi,
     title: 'Inglese',
-    description: "Web 2.0, cos'è e quali sono i suoi utilizzi.",
+    description: 'Sicurezza informatica , perchè è fondamentale',
     link: '/inglese',
-  },
-  {
-    backgroundImage: Matematica,
-    title: 'Matematica',
-    description: "Nozione varie sui concetti studiati quest'anno",
-    link: '',
   },
 ];
 
