@@ -1,0 +1,23 @@
+.Cover {
+  padding: 2rem 0;
+
+  &__title {
+    text-align: center;
+    color: #222429;
+    font-weight: bold;
+    font-size: 3rem;
+    margin-bottom: 0.75rem;
+  }
+
+  &__text {
+    text-align: center;
+    color: #979797;
+    max-width: 600px;
+    line-height: 1.5;
+    margin: 0 auto;
+  }
+
+  &__container {
+    padding-top: 2rem;
+  }
+}

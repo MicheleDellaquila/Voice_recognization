@@ -1,0 +1,48 @@
+@import './variables';
+
+/* container */
+@each $property, $key in $breakpoints {
+  @if ($property == 'xxl') {
+    .container {
+      @media (min-width: 1400px) {
+        max-width: 1320px;
+        padding-right: 1rem;
+        padding-left: 1rem;
+        margin-right: auto;
+        margin-left: auto;
+      }
+    }
+  }
+
+  .container {
+    width: 100%;
+    padding-right: 1em;
+    padding-left: 1rem;
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
+
+/* row */
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -1rem;
+  margin-right: -1rem;
+}
+
+/* create column */
+@each $property, $key in $breakpoints {
+  @for $i from 1 through $columns {
+    @media (min-width: $key) {
+      .col-#{$property}-#{$i} {
+        flex: 0 0 auto;
+        width: (100% / $columns) * $i;
+        padding-left: 1rem;
+        padding-right: 1rem;
+        margin-left: auto;
+        margin-right: auto;
+      }
+    }
+  }
+}

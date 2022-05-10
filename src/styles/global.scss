@@ -1,0 +1,41 @@
+@import 'variables';
+
+/* reset */
+html,
+body {
+  min-height: 100%;
+  background-color: #f5f6f6;
+  font-family: 'Poppins', sans-serif;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+#__next {
+  position: relative;
+  min-height: 100%;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* vendor */
+::-webkit-scrollbar {
+  display: none;
+}
+
+::selection {
+  background-color: rgba($color: #979797, $alpha: 0.1);
+}
+
+::-moz-selection {
+  background-color: rgba($color: #979797, $alpha: 0.1);
+}
