@@ -1,7 +1,48 @@
 .Carousel {
   position: relative;
+  overflow: hidden;
 
   &__inner {
     display: flex;
+  }
+
+  &__action {
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 1rem;
+
+    .Carousel__leftAction {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 26px;
+      height: 26px;
+      cursor: pointer;
+      background-color: rgba($color: #979797, $alpha: 0.2);
+      margin-right: 0.75rem;
+      border-radius: 6px;
+
+      &-icon {
+        font-size: 32px;
+        color: #222429;
+      }
+    }
+
+    .Carousel__rightAction {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 26px;
+      height: 26px;
+      cursor: pointer;
+      background-color: rgba($color: #979797, $alpha: 0.2);
+      border-radius: 6px;
+
+      &-icon {
+        font-size: 32px;
+        color: #222429;
+        font-weight: bold;
+      }
+    }
   }
 }

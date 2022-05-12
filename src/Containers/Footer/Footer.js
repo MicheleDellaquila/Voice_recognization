@@ -1,22 +1,30 @@
 import React from 'react';
-import './Footer.scss';
-import InstagramIcon from '@mui/icons-material/Instagram';
-import LinkedInIcon from '@mui/icons-material/LinkedIn';
+import './footer.scss';
+import { BsInstagram, BsLinkedin } from 'react-icons/bs';
+import { Link } from 'react-router-dom';
 
 const Footer = () => {
   return (
     <footer className='Footer'>
-      <div className='container'>
+      <div className='Footer__container'>
         <div className='Footer__row'>
+          <p className='Footer__text'>Copyright 2022 Michele Dellaquila.</p>
           <ul className='Footer__socialList'>
             <li className='Footer__socialList-item'>
-              <InstagramIcon className='Footer__item-icon' />
+              <Link to='https://www.instagram.com/micheledellaquila03/' target='_blank'>
+                <BsInstagram className='Footer__item-icon' />
+              </Link>
             </li>
             <li className='Footer__socialList-item'>
-              <LinkedInIcon className='Footer__item-icon' />
+              <Link
+                to='https://www.linkedin.com/in/michele-dellaquila-02a82b1b4/'
+                target='_blank'
+                replace
+              >
+                <BsLinkedin className='Footer__item-icon' />
+              </Link>
             </li>
           </ul>
-          <p className='Footer__text'>Copyright 2022 Michele Dellaquila.</p>
         </div>
       </div>
     </footer>
