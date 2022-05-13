@@ -16,4 +16,8 @@
       font-size: 1rem;
     }
   }
+
+  @media (max-width: 575px) {
+    padding: 1rem 0;
+  }
 }

@@ -1,5 +1,5 @@
 .Cover {
-  padding: 2rem 1rem;
+  padding: 2rem 0;
 
   &__title {
     text-align: center;
@@ -28,6 +28,10 @@
     .Cover__container {
       max-width: 1100px;
       margin: 0 auto;
+    }
+
+    @media (max-width: 767px) {
+      padding: 2.5rem 0;
     }
   }
 }

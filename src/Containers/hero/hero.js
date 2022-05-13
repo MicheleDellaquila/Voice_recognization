@@ -3,9 +3,9 @@ import Carousel from '../../components/carousel/carousel';
 import Slide1 from '../slide1/slide1';
 import Slide2 from '../slide2/slide2';
 import Slide3 from '../slide3/slide3';
-import './cover.scss';
+import './hero.scss';
 
-const Cover = () => {
+const Hero = () => {
   return (
     <div className='Cover'>
       <h1 className='Cover__title'>Voice Recognization</h1>
@@ -26,4 +26,4 @@ const Cover = () => {
   );
 };
 
-export default Cover;
+export default Hero;

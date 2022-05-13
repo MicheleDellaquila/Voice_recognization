@@ -1,4 +1,6 @@
 .Footer {
+  max-width: 1100px;
+  margin: 0 auto;
   padding: 1rem;
 
   &__container {
@@ -51,5 +53,10 @@
       text-align: center;
       order: 2;
     }
+  }
+
+
+  @media (max-width: 575px) {
+    padding: 1rem 0;
   }
 }

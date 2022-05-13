@@ -1,19 +1,14 @@
-import React from 'react';
-import Cover from '../../Reusable/Cover/Cover';
-import Header from '../../Containers/Header/Header';
+import React, { Fragment } from 'react';
+import './informatica.scss';
+import HeroInformatica from '../../containers/heroInformatica/heroInformatica';
 
 const Informatica = () => {
   return (
-    <div>
-      <div>
-        <Header />
-        <Cover
-          title='Informatica'
-          subtitle='Descrizione e spiegazione di una base dati'
-          backgroundColor='#00539C'
-        />
+    <Fragment>
+      <div className='Informatica'>
+        <HeroInformatica />
       </div>
-    </div>
+    </Fragment>
   );
 };
 

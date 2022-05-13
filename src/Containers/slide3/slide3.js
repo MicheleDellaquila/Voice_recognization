@@ -3,6 +3,7 @@ import './slide3.scss';
 import CardSubject from '../cardSubject/cardSubject';
 import Inglese from '../../assets/images/inglese.jpg';
 import Pcto from '../../assets/images/pcto.jpg';
+import EducazioneCivica from '../../assets/images/educazioneCivica.jpg';
 
 const Slide3 = () => {
   return (
@@ -27,7 +28,7 @@ const Slide3 = () => {
         <li className='Slide3__item col-md-4'>
           <CardSubject
             link='/educazione-civica'
-            image={Pcto}
+            image={EducazioneCivica}
             title='Educazione civica'
             description='Varie attività svolte nel corso dei tre anni.'
           />

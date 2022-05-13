@@ -3,7 +3,7 @@ import './home.scss';
 import { motion } from 'framer-motion/dist/framer-motion';
 import routeAnimation from '../../animation/routeAnimation';
 import Header from '../../containers/header/header';
-import Cover from '../../containers/cover/cover';
+import Hero from '../../containers/hero/hero';
 import Footer from '../../containers/footer/footer';
 
 const Home = () => {
@@ -16,7 +16,7 @@ const Home = () => {
       variants={routeAnimation}
     >
       <Header />
-      <Cover />
+      <Hero />
       <Footer />
     </motion.div>
   );
