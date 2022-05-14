@@ -1,14 +1,14 @@
-import React, { Fragment } from 'react';
+import React from 'react';
 import './informatica.scss';
 import HeroInformatica from '../../containers/heroInformatica/heroInformatica';
+import Database from '../../containers/database/database';
 
 const Informatica = () => {
   return (
-    <Fragment>
-      <div className='Informatica'>
-        <HeroInformatica />
-      </div>
-    </Fragment>
+    <div className='Informatica'>
+      <HeroInformatica />
+      <Database />
+    </div>
   );
 };
 

@@ -1,9 +1,7 @@
-.Sistemi__tecnology {
-  padding: 12rem 0;
-}
+.Sistemi {
+  height: 100vh;
 
-@media (max-width: 991px) {
-  .Sistemi__tecnology {
-    padding: 6rem 0;
+  @media (max-width: 991px) {
+    height: auto;
   }
 }

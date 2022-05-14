@@ -1,9 +1,7 @@
-.Tpsit__tecnology {
-  padding: 12rem 0;
-}
+.Tpsit {
+  height: 100vh;
 
-@media (max-width: 991px) {
-  .Tpsit__tecnology {
-    padding: 6rem 0;
+  @media (max-width: 991px) {
+    height: auto;
   }
 }

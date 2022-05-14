@@ -1,4 +1,4 @@
-.Cover {
+.Hero {
   padding: 2rem 0;
 
   &__title {
@@ -25,7 +25,7 @@
   &__main {
     padding: 4rem 0 2.5rem;
 
-    .Cover__container {
+    .Hero__container {
       max-width: 1100px;
       margin: 0 auto;
     }

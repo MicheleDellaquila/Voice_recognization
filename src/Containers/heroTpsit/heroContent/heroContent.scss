@@ -1,0 +1,103 @@
+.HeroContent__title {
+  line-height: 1.2;
+  color: #000000;
+  font-weight: bold;
+  font-size: 2.5rem;
+  margin-top: 2.5rem;
+  margin-bottom: 1.5rem;
+
+  @media (max-width: 991px) {
+    text-align: center;
+    margin-top: 0;
+  }
+
+  @media (max-width: 575px) {
+    font-size: 2rem;
+  }
+}
+
+.HeroContent__text {
+  color: #000000;
+  line-height: 1.5;
+  margin-bottom: 2rem;
+  font-weight: 400;
+  font-size: 1rem;
+
+  @media (max-width: 991px) {
+    text-align: center;
+  }
+
+  @media (max-width: 575px) {
+    font-size: 1rem;
+  }
+}
+
+.HeroContent__list {
+  margin: 3rem 0 1.5rem;
+
+  &-item {
+    display: flex;
+    align-items: center;
+    padding: 0.75rem 0;
+
+    .HeroContent__item-text {
+      margin-left: 1rem;
+      line-height: 1;
+      font-size: 1.125rem;
+    }
+
+    @media (max-width: 991px) {
+      padding: 0 1rem;
+    }
+
+    @media (max-width: 575px) {
+      padding: 0.75rem 0;
+    }
+  }
+
+  @media (max-width: 991px) {
+    display: flex;
+    justify-content: center;
+    margin: 3rem 0 2rem;
+  }
+
+  @media (max-width: 575px) {
+    flex-direction: column;
+    align-items: center;
+    margin: 1rem;
+  }
+}
+
+.HeroContent__btnContainer {
+  display: flex;
+  justify-content: flex-start;
+
+  &-btn {
+    font-weight: 400;
+    line-height: 1.5;
+    cursor: pointer;
+    outline: none;
+    padding: 0.5rem 1rem;
+    font-size: 1.25rem;
+    border-radius: 0.3rem;
+    background-color: #d90429;
+    border: 1px solid #d90429;
+
+    .HeroContent__btn-link {
+      text-decoration: none;
+      color: #ffffff;
+    }
+
+    &:hover {
+      background-color: transparent;
+    }
+
+    &:hover > .HeroContent__btn-link {
+      color: #d90429;
+    }
+  }
+
+  @media (max-width: 991px) {
+    justify-content: center;
+  }
+}

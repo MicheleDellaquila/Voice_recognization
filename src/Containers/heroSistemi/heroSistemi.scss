@@ -1,7 +1,7 @@
-.HeroInformatica {
+.HeroSistemi {
   position: relative;
   height: 100vh;
-  background-color: #012235;
+  background-color: #e0e1e1;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -11,7 +11,7 @@
     margin: 0 auto;
     padding: 0 3rem;
 
-    .HeroInformatica__header {
+    .HeroSistemi__header {
       padding: 1rem 0;
       position: absolute;
       top: 0;
@@ -19,18 +19,18 @@
       align-items: center;
 
       &-icon {
-        color: #ffffff;
+        color: #212121;
         font-size: 22px;
       }
 
       &-text {
-        color: #ffffff;
+        color: #212121;
         font-weight: 400;
         cursor: pointer;
       }
     }
 
-    .HeroInformatica__row {
+    .HeroSistemi__row {
       display: flex;
       flex-wrap: wrap;
       align-items: center;
@@ -55,9 +55,9 @@
         }
       }
 
-      .HeroInformatica__title {
+      .HeroSistemi__title {
         line-height: 1.2;
-        color: #357881;
+        color: #212121;
         font-weight: bold;
         font-size: 3rem;
         margin-bottom: 1.5rem;
@@ -71,8 +71,8 @@
         }
       }
 
-      .HeroInformatica__text {
-        color: #ffffff;
+      .HeroSistemi__text {
+        color: #4a4a4a;
         line-height: 1.5;
         margin-bottom: 2rem;
         font-weight: 400;
@@ -87,7 +87,7 @@
         }
       }
 
-      .HeroInformatica__btnContainer {
+      .HeroSistemi__btnContainer {
         display: flex;
         justify-content: flex-start;
 
@@ -99,22 +99,22 @@
           padding: 0.5rem 1rem;
           font-size: 1.25rem;
           border-radius: 0.3rem;
-          background-color: #357881;
-          border: 1px solid #357881;
+          background-color: #1b85ea;
+          border: 1px solid #1b85ea;
           color: #ffffff;
 
-          .HeroInformatica__btn-link {
+          .HeroSistemi__btn-link {
             display: flex;
             align-items: center;
           }
 
-          .HeroInformatica__btn-icon {
+          .HeroSistemi__btn-icon {
             margin-right: 0.5rem;
           }
 
           &:hover {
             background-color: transparent;
-            color: #357881;
+            color: #1b85ea;
           }
         }
 
@@ -140,5 +140,9 @@
     @media (max-width: 575px) {
       padding: 3rem 1rem 2rem;
     }
+  }
+
+  @media (max-width: 991px) {
+    height: auto;
   }
 }

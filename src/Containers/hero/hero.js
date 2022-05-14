@@ -7,14 +7,14 @@ import './hero.scss';
 
 const Hero = () => {
   return (
-    <div className='Cover'>
-      <h1 className='Cover__title'>Voice Recognization</h1>
-      <p className='Cover__text'>
+    <div className='Hero'>
+      <h1 className='Hero__title'>Voice Recognization</h1>
+      <p className='Hero__text'>
         Dimostrare l’espansione del mondo web nel settore della intelligenza artificiale tramite
         l’integrazione di un sistema vocale.
       </p>
-      <main className='Cover__main'>
-        <div className='Cover__container'>
+      <main className='Hero__main'>
+        <div className='Hero__container'>
           <Carousel items={3}>
             <Slide1 />
             <Slide2 />

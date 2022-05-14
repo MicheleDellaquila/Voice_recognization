@@ -1,0 +1,22 @@
+.HeroHeader {
+  padding: 1rem;
+  position: absolute;
+  top: 0;
+  display: flex;
+  align-items: center;
+
+  &-icon {
+    color: #000000;
+    font-size: 22px;
+  }
+
+  &-text {
+    color: #000000;
+    font-weight: 400;
+    cursor: pointer;
+  }
+
+  @media (max-width: 991px) {
+    padding: 1rem 0;
+  }
+}
