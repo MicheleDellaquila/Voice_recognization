@@ -5,6 +5,8 @@ import Home from './pages/home/home';
 import Informatica from './pages/informatica/informatica';
 import Tpsit from './pages/tpsit/tpsit';
 import Sistemi from './pages/sistemi/sistemi';
+import Italiano from './pages/italiano/italiano';
+import Storia from './pages/storia/storia';
 
 const App = () => {
   return (
@@ -14,6 +16,8 @@ const App = () => {
         <Route path='/informatica' element={<Informatica />} />
         <Route path='/tpsit' element={<Tpsit />} />
         <Route path='/sistemi-reti' element={<Sistemi />} />
+        <Route path='/italiano' element={<Italiano />} />
+        <Route path='/storia' element={<Storia />} />
       </Routes>
     </AnimatePresence>
   );

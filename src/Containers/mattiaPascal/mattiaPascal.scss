@@ -1,0 +1,61 @@
+.MattiaPascal {
+  padding: 8rem 3.75rem;
+
+  &__container {
+    max-width: 1548px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .MattiaPascal__row {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-evenly;
+
+      & > *:first-child {
+        margin-top: 1.5rem;
+        padding-left: 0;
+
+        @media (max-width: 991px) {
+          padding: 0;
+        }
+      }
+
+      & > *:last-child {
+        margin-top: 1.5rem;
+        padding-right: 0;
+
+        @media (max-width: 991px) {
+          padding: 0;
+        }
+      }
+
+      .MattiaPascal__title {
+        line-height: 1.2;
+        color: #000000;
+        font-weight: bold;
+        font-size: 3rem;
+        margin-bottom: 1rem;
+
+        @media (max-width: 575px) {
+          font-size: 2rem;
+        }
+      }
+
+      .MattiaPascal__text {
+        line-height: 1.8;
+        font-weight: 400;
+        font-size: 1rem;
+      }
+    }
+  }
+
+  @media (max-width: 991px) {
+    padding: 4.5rem 3.75rem;
+  }
+
+  @media (max-width: 575px) {
+    padding: 2rem 1rem;
+  }
+}
