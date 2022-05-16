@@ -33,7 +33,7 @@
 
       .SicurezzaIt__title {
         line-height: 1.2;
-        color: #144864;
+        color: #0161e8;
         font-weight: bold;
         font-size: 3rem;
         margin-bottom: 1rem;
@@ -58,5 +58,6 @@
 
   @media (max-width: 575px) {
     padding: 2rem 1rem;
+    height: auto;
   }
 }

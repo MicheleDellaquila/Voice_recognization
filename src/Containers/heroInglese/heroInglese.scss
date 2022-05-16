@@ -141,4 +141,8 @@
       padding: 3rem 1rem 2rem;
     }
   }
+
+  @media (max-width: 991px) {
+    height: auto;
+  }
 }

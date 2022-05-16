@@ -51,6 +51,7 @@ const Carousel = ({ items, children }) => {
         <span className='Carousel__leftAction' onClick={leftHandler}>
           <BiChevronLeft className='Carousel__leftAction-icon' />
         </span>
+        <span className='Carousel__currentItem'>{currentItem.current + 1}</span>
         <span className='Carousel__rightAction' onClick={rightHandler}>
           <BiChevronRight className='Carousel__rightAction-icon' />
         </span>
