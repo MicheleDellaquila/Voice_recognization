@@ -15,6 +15,7 @@
     position: absolute;
     bottom: 0;
     padding: 1rem;
+    transition: all 500ms;
 
     &-title {
       color: #f5f6f6;
@@ -26,5 +27,9 @@
       color: #f5f6f6;
       font-weight: 400;
     }
+  }
+
+  &:hover &__wrapper {
+    transform: translateY(-20px);
   }
 }

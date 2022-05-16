@@ -30,7 +30,7 @@ const Slide3 = () => {
             link='/educazione-civica'
             image={EducazioneCivica}
             title='Educazione civica'
-            description='Varie attività svolte nel corso dei tre anni.'
+            description="L'uso della tecnologia nella problematica ambientale."
           />
         </li>
       </ul>
