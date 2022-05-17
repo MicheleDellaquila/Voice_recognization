@@ -1,32 +1,7 @@
-@import '../../Styles/Variables/variables';
+.Gestione {
+  height: 100vh;
 
-.Gestione__tecnology {
-  padding: 12rem 0;
-}
-
-@media (max-width: 991px) {
-  .Gestione__tecnology {
-    padding: 6rem 0;
-  }
-}
-
-.Gestione__list {
-  display: flex;
-  flex-direction: column;
-  gap: 1.25rem;
-  margin-top: 1rem;
-
-  &-title {
-    font-size: 1.125rem;
-    font-weight: 600;
-    color: $color-title;
-    margin-bottom: 0.5rem;
-  }
-
-  &-text {
-    font-size: 1rem;
-    color: $color-text;
-    line-height: 1.5;
-    font-weight: 400;
+  @media (max-width: 991px) {
+    height: auto;
   }
 }

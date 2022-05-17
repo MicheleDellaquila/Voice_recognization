@@ -1,0 +1,124 @@
+.Pcto {
+  position: relative;
+
+  &__header {
+    padding: 1rem;
+    position: absolute;
+    top: 0;
+    display: flex;
+    align-items: center;
+    z-index: 1;
+
+    &-icon {
+      color: #ffffff;
+      font-size: 22px;
+    }
+
+    &-text {
+      color: #ffffff;
+      font-weight: 400;
+      cursor: pointer;
+    }
+  }
+
+  &__container {
+    position: relative;
+
+    .Pcto__row {
+      display: flex;
+      flex-wrap: wrap;
+      height: 100vh;
+
+      & > * {
+        position: relative;
+        padding: 0;
+      }
+
+      .Pcto__image {
+        height: 100%;
+
+        @media (max-width: 991px) {
+          display: block;
+          width: 100%;
+          object-fit: cover;
+          height: 320px;
+        }
+      }
+
+      .Pcto__overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        background-color: rgba($color: #000000, $alpha: 0.25);
+
+        @media (max-width: 991px) {
+          height: 320px;
+        }
+      }
+
+      .Pcto__content {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        padding: 0 2rem;
+
+        .Pcto__details {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          margin-bottom: 0.5rem;
+
+          .Pcto__month {
+            color: #ffffff;
+          }
+
+          .Pcto__day {
+            color: #ffffff;
+            margin: 0 1rem;
+          }
+
+          .Pcto__year {
+            color: #ffffff;
+          }
+        }
+
+        .Pcto__title {
+          font-weight: bold;
+          color: #ffffff;
+          line-height: 1;
+          font-size: 2.5rem;
+          margin-bottom: 0.5rem;
+          text-align: center;
+
+          @media (max-width: 575px) {
+            font-size: 2rem;
+          }
+        }
+
+        .Pcto__subtitle {
+          color: #ffffff;
+          font-size: 1.125rem;
+          text-align: center;
+
+          @media (max-width: 575px) {
+            font-size: 1rem;
+          }
+        }
+
+        @media (max-width: 991px) {
+          width: 100%;
+        }
+
+        @media (max-width: 575px) {
+          padding: 0 1rem;
+        }
+      }
+
+      @media (max-width: 991px) {
+        height: auto;
+      }
+    }
+  }
+}
