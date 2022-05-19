@@ -1,0 +1,19 @@
+.VoiceRecognization {
+  position: absolute;
+  bottom: 16px;
+  right: 16px;
+  width: 42px;
+  height: 42px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #1b85ea;
+  background-color: #1b85ea;
+  border-radius: 50%;
+  cursor: pointer;
+
+  &__icon {
+    font-size: 20px;
+    color: #ffffff;
+  }
+}
