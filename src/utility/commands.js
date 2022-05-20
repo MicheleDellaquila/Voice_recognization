@@ -1,9 +1,12 @@
 import audio from '../assets/audio.mp3';
+import presentazione from '../assets/presentazione.mp3';
 
 const commands = [
   {
     command: 'Ciao jarvis',
-    callback: () => {},
+    callback: () => {
+      new Audio(presentazione).play();
+    },
   },
   {
     command: ['Jarvis andiamo su informatica', 'Jarvis andiamo a informatica'],
@@ -84,6 +87,15 @@ const commands = [
     command: ['Jarvis andiamo su educazione civica', 'Jarvis andiamo a educazione civica'],
     callback: () => {
       window.location.assign('http://localhost:3000/educazione-civica');
+      setTimeout(() => {
+        new Audio(audio).play();
+      }, 3000);
+    },
+  },
+  {
+    command: 'Jarvis torna indietro',
+    callback: () => {
+      window.location.assign('http://localhost:3000/');
       setTimeout(() => {
         new Audio(audio).play();
       }, 3000);

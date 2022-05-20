@@ -1,26 +1,6 @@
 .Pcto {
   position: relative;
 
-  &__header {
-    padding: 1rem;
-    position: absolute;
-    top: 0;
-    display: flex;
-    align-items: center;
-    z-index: 1;
-
-    &-icon {
-      color: #ffffff;
-      font-size: 22px;
-    }
-
-    &-text {
-      color: #ffffff;
-      font-weight: 400;
-      cursor: pointer;
-    }
-  }
-
   &__container {
     position: relative;
 

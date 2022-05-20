@@ -1,16 +1,11 @@
 import React from 'react';
 import './heroGestione.scss';
 import educazioneCivicaPage from '../../assets/images/educazioneCivicaPage.jpg';
-import { MdKeyboardArrowLeft } from 'react-icons/md';
 
 const HeroGestione = () => {
   return (
     <div className='HeroGestione'>
       <div className='HeroGestione__container'>
-        <header className='HeroGestione__header'>
-          <MdKeyboardArrowLeft className='HeroGestione__header-icon' />
-          <p className='HeroGestione__header-text'>Torna indietro</p>
-        </header>
         <div className='HeroGestione__row'>
           <div className='col-xs-12 col-md-10 col-lg-5'>
             <h1 className='HeroGestione__title'>

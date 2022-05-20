@@ -1,6 +1,5 @@
 import React from 'react';
 import './pcto.scss';
-import { MdKeyboardArrowLeft } from 'react-icons/md';
 import Superarè from '../../assets/images/superarè.jpg';
 import makeRoma from '../../assets/images/makeRoma.jpg';
 import giornataMemoria from '../../assets/images/giornataMemoria.jpeg';
@@ -8,10 +7,6 @@ import giornataMemoria from '../../assets/images/giornataMemoria.jpeg';
 const Pcto = () => {
   return (
     <div className='Pcto'>
-      <header className='Pcto__header'>
-        <MdKeyboardArrowLeft className='Pcto__header-icon' />
-        <p className='Pcto__header-text'>Torna indietro</p>
-      </header>
       <div className='Pcto__container'>
         <div className='Pcto__row'>
           <div className='col-xs-12 col-lg-4'>
