@@ -95,9 +95,9 @@ const commands = [
   {
     command: 'Jarvis torna indietro',
     callback: () => {
-      window.location.assign('http://localhost:3000/');
+      new Audio(audio).play();
       setTimeout(() => {
-        new Audio(audio).play();
+        window.location.assign('http://localhost:3000/');
       }, 3000);
     },
   },
