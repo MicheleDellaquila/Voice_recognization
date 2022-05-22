@@ -33,6 +33,7 @@
       display: flex;
       flex-wrap: wrap;
       align-items: center;
+      justify-content: space-between;
 
       & > * {
         margin-top: 1.5rem;
@@ -83,42 +84,6 @@
 
         @media (max-width: 575px) {
           font-size: 1rem;
-        }
-      }
-
-      .HeroGestione__btnContainer {
-        display: flex;
-        justify-content: flex-start;
-
-        &-btn {
-          font-weight: 400;
-          line-height: 1.5;
-          cursor: pointer;
-          outline: none;
-          padding: 0.5rem 1rem;
-          font-size: 1.25rem;
-          border-radius: 0.3rem;
-          background-color: #357881;
-          border: 1px solid #357881;
-          color: #ffffff;
-
-          .HeroGestione__btn-link {
-            display: flex;
-            align-items: center;
-          }
-
-          .HeroGestione__btn-icon {
-            margin-right: 0.5rem;
-          }
-
-          &:hover {
-            background-color: transparent;
-            color: #357881;
-          }
-        }
-
-        @media (max-width: 991px) {
-          justify-content: center;
         }
       }
 
