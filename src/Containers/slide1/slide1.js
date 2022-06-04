@@ -22,7 +22,7 @@ const Slide1 = () => {
             link='/tpsit'
             image={Tpsit}
             title='Tpsit'
-            description='Quali tecnologie compongono il mio sito web.'
+            description='Architettura a tre livelli, perchè è fondamentale conoscerla'
           />
         </li>
         <li className='Slide1__item col-xs-12 col-md-4'>

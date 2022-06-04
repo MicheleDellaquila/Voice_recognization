@@ -8,7 +8,7 @@ import './hero.scss';
 const Hero = () => {
   return (
     <div className='Hero'>
-      <h1 className='Hero__title'>Voice Recognization</h1>
+      <h1 className='Hero__title'>Voice Recognition</h1>
       <p className='Hero__text'>
         Dimostrare l’espansione del mondo web nel settore della intelligenza artificiale tramite
         l’integrazione di un sistema vocale.

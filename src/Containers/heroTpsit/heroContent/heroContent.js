@@ -7,24 +7,22 @@ import html from '../../../assets/icons/html-5.png';
 const HeroContent = () => {
   return (
     <Fragment>
-      <h1 className='HeroContent__title'>
-        Movie project - Tecnologie che compongono il mio progetto
-      </h1>
+      <h1 className='HeroContent__title'>Movie project - Achitettura a tre livelli</h1>
       <p className='HeroContent__text'>
-        Esploriamo tramite la progettazione del progetto Movie, le tecnologie che compongono il mio
-        sito web e la loro applicazione.
+        Esploriamo tramite la progettazione del progetto Movie, l'architetture a tre livelli che
+        compongono il mio sito web.
       </p>
       <ul className='HeroContent__list'>
         <li className='HeroContent__list-item'>
-          <img src={Javascript} width={42} alt="javascript" />
+          <img src={Javascript} width={42} alt='javascript' />
           <p className='HeroContent__item-text'>Javascript</p>
         </li>
         <li className='HeroContent__list-item'>
-          <img src={html} width={42} alt="javascript" />
+          <img src={html} width={42} alt='javascript' />
           <p className='HeroContent__item-text'>Html5</p>
         </li>
         <li className='HeroContent__list-item'>
-          <img src={css} width={42} alt="javascript" />
+          <img src={css} width={42} alt='javascript' />
           <p className='HeroContent__item-text'>Css3</p>
         </li>
       </ul>
